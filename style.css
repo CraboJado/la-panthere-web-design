@@ -840,6 +840,15 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form >.col-sm-6{
+    width: auto;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
