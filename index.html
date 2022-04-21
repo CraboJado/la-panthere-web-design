@@ -15,9 +15,16 @@
 	
 	<!-- A compresser les fiches annexs pour réduire la taille de la page -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+
+	<!-- A supprimer les fiches que la page ne s'en serve pas  -->
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
+	<script src="./js/gmaps.min.js"></script>
 		
 	<!-- Modifié la balise title en donnant un nom incluant le sujet de la page -->
 	<title>Agence La Panthère - Entreprise Webdesign lyon</title>
@@ -44,10 +51,10 @@
 
 			<nav class="navbar row">
 				<div class="navbar-header">
-					<!-- Supprimé  div class="keywords" : une technique de black hack -->
+					<!-- Supprimé  div class="keywords" : une technique de black hat -->
 					<!-- modifié alt du img -->
 					<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo la Panthère agence web design à lyon " height="40" /></a>
-					<!-- Supprimé  div class="keywords" : une technique de black hack -->
+					<!-- Supprimé  div class="keywords" : une technique de black hat -->
 					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 						<!-- Supprimé balise span: Toggle navigation inutile -->
 						<span class="icon-bar"></span>
@@ -259,41 +266,40 @@
 		<div class="container bloc-sm">
 			<div class="row">
 				<div class="col-sm-12">
-					<p class="text-center black">
+					<p class="text-center white">
 						Agence La Panthère - Agence web basée à Lyon.<br>
 					</p>
-					<p class="text-center black">
-						<a class="black" href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
+					<p class="text-center white">
+						<a  class="white" href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
 						<br>
-						<a target="blank" class="black" href="https://www.google.fr/maps/place/2+Pl.+Sathonay,+69001+Lyon/@45.7695241,4.8279733,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">2 place Sathonay 69001 Lyon</a>
+						<a class="white" target="blank" href="https://www.google.fr/maps/place/2+Pl.+Sathonay,+69001+Lyon/@45.7695241,4.8279733,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">2 place Sathonay 69001 Lyon</a>
 						<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 					</p>
 					<div class="row row-no-gutters social">
 						<div class="col-sm-3">
 							<div class="text-center">
 								<!-- modifié href pour pointer le lien correct-->
-								<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+								<a class="social" href="https://twitter.com" aria-label="twitter link"><span class="fa fa-twitter icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
 								<!-- modifié href pour pointer le lien correct -->
-								<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+								<a class="social" href="https://www.facebook.com" aria-label="facebook link"><span class="fa fa-facebook icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
 								<!-- modifié href pour pointer le lien correct -->
-								<a class="social" href="https://www.dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
+								<a class="social" href="https://www.dribbble.com" aria-label="dribbble link"><span class="fa fa-dribbble icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
 								<!-- modifié href pour pointer le lien correct -->
-								<a class="social" href="https://www.instagram.com" ><span class="fa fa-instagram icon-md"></span></a>
+								<a class="social" href="https://www.instagram.com" aria-label="instagram link"><span class="fa fa-instagram icon-md"></span></a>
 							</div>
 						</div>
-						<!-- Suppriméle div keywords, technique de black hat -->
 					</div>
 					<!-- Supprimé les lien de partenaires qui n'existent pas -->
 			</div>
@@ -306,12 +312,7 @@
 </div>
 <!-- Principal conteneur END -->
     
-<!-- A supprimer les fiches que la page ne s'en serve pas  -->
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+
 
 </body>
 </html>
